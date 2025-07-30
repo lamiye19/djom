@@ -2,7 +2,8 @@ import os
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_ollama.embeddings import OllamaEmbeddings
+#from langchain_ollama.embeddings import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 def load_and_split_txt(txt_dir="../collecte2/data"):
     """
@@ -24,7 +25,9 @@ def load_and_split_txt(txt_dir="../collecte2/data"):
     return all_docs
     
 def create_vectorstore(documents, index_path="knowledge_faiss"):
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": "cpu"})
+    #embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
     index_file = os.path.join(index_path, "index.faiss")
     vectorstore = FAISS.from_documents(documents, embeddings)

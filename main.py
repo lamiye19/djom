@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_community.vectorstores import FAISS
-from langchain_ollama import OllamaEmbeddings
+#from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 import time
 import datetime
@@ -9,8 +10,10 @@ from groq import Groq
 client = Groq(api_key=os.environ["OPENAI_API_KEY"])
 
 # --- Base vectorielle ---
-FAISS_INDEX_PATH = "knowledge_faiss-1000"
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+FAISS_INDEX_PATH = "knowledge_faiss"
+#embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": "cpu"})
 vectordb = FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 retriever = vectordb.as_retriever(
     search_type="similarity_score_threshold",
