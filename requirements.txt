@@ -9,3 +9,4 @@ TextLoader
 faiss_cpu
 sentence_transformers
 ollama_llm
+langchain_huggingface
