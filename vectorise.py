@@ -17,7 +17,7 @@ def load_and_split_txt(txt_dir="../collecte2/data"):
                 paths.append(path)
                 loader = TextLoader(path, encoding="utf-8")
                 docs = loader.load()
-                splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+                splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
                 chunks = splitter.split_documents(docs)
                 all_docs.extend(chunks)
     print(len(paths), "fichiers")

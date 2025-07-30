@@ -2,8 +2,10 @@ streamlit
 langchain
 langchain_community
 langchain_core
+langchain_groq
+groq
+langchain_ollama
 TextLoader
 faiss_cpu
 sentence_transformers
 ollama_llm
-langchain_groq
