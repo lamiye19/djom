@@ -71,7 +71,7 @@ with st.sidebar:
     st.markdown("## Choisir un modèle IA")
     model_choice = st.radio(
         "Modèle à utiliser :",
-        ["Mistral", "llama", "llama versatile", "gemma"], key="model_select", index=0
+        ["llama", "llama versatile", "gemma"], key="model_select", index=0
     )
     MODEL_ID = MODEL_MAP[model_choice]
     st.caption(f"Modèle Groq: `{MODEL_ID}`")

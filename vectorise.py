@@ -18,7 +18,7 @@ def load_and_split_txt(txt_dir="../collecte2/data"):
                 paths.append(path)
                 loader = TextLoader(path, encoding="utf-8")
                 docs = loader.load()
-                splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+                splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
                 chunks = splitter.split_documents(docs)
                 all_docs.extend(chunks)
     print(len(paths), "fichiers")
@@ -32,7 +32,7 @@ def create_vectorstore(documents, index_path="knowledge_faiss"):
     index_file = os.path.join(index_path, "index.faiss")
     vectorstore = FAISS.from_documents(documents, embeddings)
     vectorstore.save_local(index_path)
-    print("Base vectorielle créee et contient", len(vectorstore), "documents")
+    print("Base vectorielle créée")
     return vectorstore
     
 txt = load_and_split_txt()
