@@ -1,1 +1,5 @@
 .streamlit/secrets.toml
+results
+knowledge_faiss-*
+app/__pycache__
+bert-intentions

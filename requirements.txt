@@ -10,3 +10,8 @@ faiss_cpu
 sentence_transformers
 ollama_llm
 langchain_huggingface
+spacy
+pandas
+transformers
+torch
+joblib

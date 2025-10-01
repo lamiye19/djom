@@ -1,0 +1,174 @@
+entree,intention,Intention1,Compréhension,Qualité réponse,Remarques / améliorations
+Bonjour je suis en terminale scientifique. Que puis-je faire comme études ?,recherche_formation,recherche_formation,Oui,Bonne,L’assistant a compris le besoin et propose options adaptées selon profil scientifique
+"pas vraiment, fais moi des propositions",recherche_formation,Obtenir suggestions concrètes,Oui,Bonne,"Réponses pertinentes, adaptées au niveau et aux compétences supposées"
+et si je ne souhaite plus étudier ?,recherche_emploi,centre_interet,Oui,Bonne,"Pose des questions pour clarifier, mais certaines répétitions"
+je n'ai pas assez d'argent pour l'instant donc je veux faire de petis jobs pendant un an avant de reprendre les études. Que me conseille tu?,recherche_emploi,recherche_formation,Oui,Bonne,"Réponses pertinentes, mais manque parfois de ressources locales concrètes"
+couture ou tresse ou aide maçon,info_interet,Confirmer choix métiers manuels,Partiellement,Moyenne,L’assistant répète certaines questions plutôt que de fournir conseils précis
+je t'ai déjà dit que je veux faire de la couture ou tresse ou l'aide maçon,info_interet,Rappeler choix métiers,Partiellement,Moyenne,"Répétition inutile, pourrait proposer des formations ou contacts concrets"
+ok où puis je apprendre la couture?,recherche_centre,Obtenir centres de formation,Partiellement,Moyenne,"Propose options générales et formations en ligne, manque noms locaux précis"
+Quel sont les centres de formation ?,recherche_centre,Obtenir centres spécifiques,Non,Faible,L’assistant ne fournit pas de liste exacte ni contacts
+cite moi ces centres de formation,recherche_centre,Liste précise de centres,Non,Faible,Répète les mêmes conseils généraux
+je veux une liste,precision,Liste concrète demandée,Non,Faible,Même problème : informations concrètes manquantes
+Je viens d'avoir mon bac littéraire mais je ne sais vers quoi me diriger à l'université,recherche_formation,Orientation universitaire,Oui,Bonne,"Encourage réflexion sur passions et matières, suggère options adaptées"
+"langue, art oratoire",info_interet,Préciser intérêts,Oui,Très bonne,"Propose filières lettres modernes, linguistique, rhétorique et communication"
+c'est quoi la philologie ?,recherche_info,Comprendre un domaine spécifique,Oui,Très bonne,"Définition détaillée, applications professionnelles claires"
+cette option est elle disponible au togo?,recherche_info,Vérifier disponibilité locale,Oui,Bonne,"Donne universités potentielles, manque contacts précis"
+oui,precision,Confirmer recherche,Oui,Moyenne,"Réponse courte, pourrait clarifier intention réelle"
+je suis interesé par le droit,info_interet,Changement de filière,Oui,Bonne,"Détail sur cursus, spécialisations et débouchés locaux"
+quels sont les sources que tu as utilisé pour répondre?,recherche_info,Vérification fiabilité,Oui,Bonne,"Explications sur sources générales, mais pas spécifiques locales"
+Bonjour Djom,salutation,Salutation / démarrer interaction,Oui,Bonne,Réponse polie et engageante
+Non je viens d'obtenir mon Bac D mais je ne sais quoi faire,recherche_formation,Orientation après Bac D,Oui,Bonne,"Pose questions pour clarifier, explore options métiers et formations"
+je n'ai plus envie d'étudier je veux travailler,recherche_emploi,Chercher alternatives à études,Oui,Bonne,Propose métiers adaptés selon compétences
+j'ai des compétneces en bureautique,info_interet,Préciser compétences pour métiers,Oui,Bonne,Aide à cibler métiers liés au bureau et à la gestion
+Ok je choisi l'Assistant de direction,recherche_formation,Choix précis de métier,Oui,Très bonne,Fournit formations et établissements correspondants
+Waoo c'est intéressant donne moi plus d'info sur CIN INTA SOKODE,recherche_info,Obtenir détails sur établissement,Oui,Très bonne,"Donne programme, avantages, contacts"
+"et si je veux mz former à la sécurité, santé au travail?",recherche_formation,Explorer filière SST,Oui,Très bonne,"Explications licences, master, compétences et débouchés"
+où trouver cette formation?,recherche_centre,Rechercher établissements SST,Oui,Très bonne,Fournit noms d’institutions et liens locaux
+Et l'IFOMESS?,recherche_info,Vérifier établissement spécifique,Oui,Très bonne,Confirme existence et propose informations pratiques
+les instituts qui forment en Sécurité et la Santé au Travail,recherche_centre,Lister instituts SST,Oui,Très bonne,"Donne noms d’institutions, contacts et options locales"
+Bonsoir Djom,salutation,Salutation / démarrer interaction,Oui,Bonne,Réponse engageante
+je viens d'obtenir mon bac D et je suis intéressé par la Sécurité et Santé au Travail,info_interet,Orientation SST,Oui,Très bonne,Analyse profil et propose options formation adaptées
+Où puis je me former à ça?,recherche_centre,Rechercher établissement SST,Oui,Très bonne,Liste institutions locales et internationales
+Il n' y a pas d'autres institut à lomé aui offrent ça?,recherche_centre,Vérifier autres options locales,Oui,Bonne,"Propose alternatives, manque parfois contacts précis"
+Connais tu ifomess?,recherche_info,Vérification institut spécifique,Oui,Très bonne,Informations pratiques sur IFOMESS et filières proposées
+quelles autres formations offrent ils?,recherche_info,Explorer autres formations IFOMESS,Oui,Très bonne,Détaille programmes complémentaires et spécialisations
+D'accord. merci,precision,Clôturer / remercier,Oui,Bonne,Réponse polie et engageante
+Et esgis ou Ucao?,recherche_info,Explorer autres institutions SST,Oui,Très bonne,Donne informations sur ESGIS et UCAO et programmes SST
+c'est vrai ça?,recherche_info,Vérification information,Oui,Bonne,"Confirme informations précédentes, assure cohérence"
+Salut j’aime les maths et je voudrais choisir une filière à l’université ,info_interet,Orientation filière scientifique,Oui,Très bonne,"Propose options adaptées (Informatique, Big Data, Cybersécurité)"
+Tu as des noms d’universités ?,recherche_centre,Rechercher institutions locales,Oui,Bonne,Fournit universités locales et privées
+Je veux une université ou école qui allie pratique et theorie,recherche_centre,Combiner pratique et théorie,Oui,Très bonne,Détaille établissements avec stages et apprentissage pratique
+Je veux démarrer la première année d’université ,recherche_formation,Processus inscription universitaire,Oui,Très bonne,"Explique étapes, dossiers et suivi des inscriptions"
+hi you speack english,salutation,Vérification capacité conversation en anglais,Oui,Bonne,Réponse courte et adaptée à la langue
+programme de 3ime,recherche_formation,Demande programme scolaire 3ème,Oui,Bonne,Propose programme adapté au niveau de l’utilisateur
+SYMPTOME DU PALUDISME,hors_contexte,Demander informations santé / maladie,Oui,Bonne,"Réponse précise sur symptômes, information pédagogique"
+LA LANGE LA MOINS CELEBRE AU MONDE,hors_contexte,Demander curiosité culturelle / linguistique,Oui,Moyenne,"Réponse générale, manque détails spécifiques ou exemples concrets"
+JE SUIS EN TERMINALE ,info_interet,Indiquer niveau scolaire,Oui,Bonne,Permet contextualisation des conseils
+J'AIME BIEN LE FOOTBALL ,info_interet,Indiquer centre d’intérêt,Oui,Bonne,Peut orienter métiers ou activités liées au sport
+JE SUIS EN CLASSE DE 4eme ,info_niveau,Indiquer niveau scolaire,Oui,Bonne,Contexte pour orientation et conseils
+J'AIMERAIS TRAVAILLER a LOME CONTENAIR TERMINALE S.A,recherche_emploi,Cherche opportunité de travail,Oui,Moyenne,"Réponse générale, pourrait fournir contacts ou conseils pratiques locaux"
+JE SUIS EN 4eme ,info_niveau,Indiquer niveau scolaire,Oui,Bonne,Contextualisation pour conseils futurs
+J'AIMERAIS FAIRE LA GESTION,info_interet,Orientation vers gestion / métier,Oui,Bonne,Propose pistes de métiers et formations
+BRO POSE MOI DES QUESTION ,precision,Inciter l’assistant à poser des questions,Oui,Bonne,"Interaction dynamique, engageante"
+LA GESTION FINANCIERE,info_interet,Préciser domaine gestion,Oui,Bonne,Propose formations ou compétences requises
+POUR DEVELOPPER MA COMPÉTENCE APRES MON BEPC JE VAIS FAIRE LE G2,recherche_formation,Planification parcours scolaire,Oui,Bonne,Propose étapes logiques de progression
+doctora ça dure combien d'année,recherche_info,Demande durée doctorat,Oui,Bonne,Réponse précise sur durée et exigences
+combien d'années totale on dure á l'université ,recherche_info,Demander durée totale université,Oui,Bonne,Réponse complète avec cycles et années
+A quel âge un humain normal peut mourir,hors_contexte,Question générale connaissance / curiosité,Oui,Moyenne,Réponse informative mais hors orientation
+quel metier me convient,recherche_emploi,Demande suggestion métier,Oui,Bonne,"Propose métiers selon profil, compétences et intérêts"
+je suis en classe de terminale D,info_interet,Indiquer niveau scolaire,Oui,Bonne,Permet contextualisation pour orientation
+technologie,recherche_formation,Préciser domaine d’intérêt,Oui,Bonne,Peut orienter vers filières technologiques
+la technologie,recherche_formation,Préciser domaine d’intérêt,Oui,Bonne,"Même intention que précédente, confirmer domaine"
+je veux faire l achitecture,recherche_formation,Choix métier spécifique,Oui,Très bonne,Fournit pistes formation et spécialisations
+ingeniere,info_interet,Préciser métier / spécialisation,Oui,Bonne,Guide vers ingénierie électrique ou générale
+Ingénierie électrique ,info_interet,Spécialisation précise,Oui,Très bonne,"Propose écoles, programmes et parcours détaillés"
+ok texte mon niveau,precision,Demander évaluation du niveau,Oui,Bonne,Permet à l’assistant d’adapter conseils
+nn,precision,Réponse négative / clarification,Oui,Moyenne,"Réponse courte, pas toujours exploitable"
+je passe en terminal,info_niveau,Indiquer progression scolaire,Oui,Bonne,Contexte pour recommandations futures
+je veux devenir ingenerie en electricite,info_interet,Orientation métier précis,Oui,Très bonne,"Détaille parcours, formations et compétences nécessaires"
+pose moi des question,precision,Inciter à poser questions pour orientation,Oui,Bonne,Interaction engageante et dynamique
+1) la fabrication ,info_interet,Préciser activité ou domaine,Oui,Moyenne,"Réponse fragmentaire, nécessite clarification"
+"Des machines, des équipements",info_interet,Détailler activité spécifique,Oui,Moyenne,"Partiellement exploitable, pourrait guider vers métiers industriels"
+J'aime les jeux vidéo et suis sociable j'ai pas de qualité précis ,info_interet,Indiquer centres d’intérêt et traits personnels,Oui,Bonne,Permet d’orienter vers métiers liés au numérique ou créativité
+J'aime les jeux comme graw a garden brawl star,info_interet,Préciser type de jeux / intérêt numérique,Oui,Bonne,Orientation vers développement jeux vidéo ou informatique ludique
+Okay vue que j'aime un peu le domaine des jeux je me suis dit je fais faire la série D etc et m'améliorer côté informatique afin de pouvoir créer la jeux ...,info_interet,Expliquer projet informatique et contraintes,Oui,Bonne,"Réponse adaptée, suggère parcours progressif et formation informatique"
+Genre je vais vite résumé suis un élève de la classe de 4eme mais j'ai pas encore de pc ...,info_niveau,Résumé situation et objectifs,Oui,Bonne,"Clarification complète, permet réponse ciblée"
+Non 4eme collège,info_niveau,Préciser niveau scolaire,Oui,Bonne,Permet contextualisation de l’orientation
+Azy tu le le dire à peux près quel travail je peux faire avec les infos que je t'ai énumérés ,recherche_emploi,Demander suggestions métiers adaptées,Oui,Bonne,Fournit idées concrètes selon intérêts et contraintes
+stl,salutation,Indiquer matière ou série,Oui,Moyenne,"Réponse vague, nécessite clarification"
+les sciences,info_interet,Indiquer intérêt scientifique,Oui,Bonne,Permet proposer filières scientifiques adaptées
+informatique,info_interet,Indiquer intérêt pour informatique,Oui,Très bonne,"Suggère métiers, parcours formation et projets liés aux jeux et numérique"
+oui,precision,Confirmer intention / choix,Oui,Moyenne,"Réponse courte, à compléter par détails concrets"
+connait tu autre chose,recherche_info,Demander alternatives ou options supplémentaires,Oui,Bonne,Fournit pistes supplémentaires et idées diverses
+servant de messe,info_interet,Indiquer centre d’intérêt religieux,Oui,Bonne,Permet proposer activités bénévoles ou métiers liés à religion
+je ne comprend pas ,precision,Demander clarification,Oui,Moyenne,"Réponse demande éclaircissement, pourrait guider plus explicitement"
+ouvrir une entreprise sous le nom de FONCTION ELEMENTAIRE,info_interet,Proposer création entreprise,Oui,Bonne,Donne conseils généraux sur entrepreneuriat et produits jeunes
+vendre des chose qui sont essentiel a nos jeune ,precision,Préciser type de produits,Oui,Bonne,Suggestions orientées vers marché local et besoins jeunes
+des produits electronique,precision,Spécifier secteur produits,Oui,Bonne,"Propose secteur électronique, haute technologie"
+des produit de haut technologie,precision,Préciser qualité produits,Oui,Bonne,"Suggère produits électroniques de qualité, ordinateurs et périphériques"
+par exemple des ordinateur,precision,Donner exemples précis,Oui,Bonne,"Réponse concrète, améliore plan d’entreprise"
+des ordinateur portable comme =moi j utilise,precision,Préciser produits spécifiques,Oui,Bonne,Réponse adaptée aux capacités du marché local
+des ecran de haut definition,precision,Préciser gamme produits,Oui,Bonne,Conseils adaptés pour produits technologiques avancés
+ok,precision,Confirmation / transition,Oui,Moyenne,"Réponse courte, pas très informative"
+Je m'appelle joseph,precision,Indiquer nom,Oui,Bonne,Contexte pour interaction personnalisée
+Secondaire,info_interet,Indiquer niveau scolaire,Oui,Bonne,Contextualisation pour orientation
+Non troisième,info_interet,Préciser niveau scolaire / année,Oui,Bonne,Permet adapter conseils et suggestions
+Comment savoir son série,recherche_info,Demander clarification série / orientation,Oui,Bonne,Fournit méthodes ou indications pour identifier la série scolaire
+"Bonjour Djom, comment ça va ?",salutation,,,,
+" Salut, peux-tu m’aider à choisir une formation ? ",salutation,,,,
+"Bonsoir, je voudrais des conseils pour mon orientation.",salutation,,,,
+C’est quoi un assistant de direction et que fait-il ?,recherche_info,,,,
+Quel est le plus grand océan du monde ?,hors_contexte,,,,
+Quelles formations courtes me permettent de travailler rapidement dans le domaine informatique ?,,,,,
+Quels métiers peut-on exercer après un BTS en gestion ?,recherche_formation,,,,
+"Je m’intéresse à l’IA et au Big Data, quelles écoles au Togo proposent ces filières ?",recherche_centre,,,,
+Quel est le salaire moyen d’un ingénieur en cybersécurité au Togo ?,recherche_info,,,,
+donne-moi des centres de formation en mécanique,recherche_centre,,,,
+où se trouve une école d’ingénieur,recherche_centre,,,,
+"je veux travailler directement""",recherche_emploi,,,,
+Quels programmes existent pour se former en cybersécurité sans passer par l’université,recherche_formation,,,,
+Est-ce que la formation en sécurité et santé au travail est reconnue par l’État ?,recherche_info,,,,
+"Je souhaite devenir entrepreneur tech, quelles formations sont adaptées",recherche_formation,,,,
+Quels cursus permettent de combiner art et technologie ?,recherche_formation,,,,
+Combien de temps dure un master en Big Data à l’Université de Kara ?,recherche_info,,,,
+"Je veux travailler dans l’informatique, quels métiers puis-je exercer sans diplôme universitaire ?",recherche_emploi,,,,
+Quels jobs offrent le plus d’expérience pratique pour un débutant ?,recherche_emploi,,,,
+Quels sont les critères pour entrer en licence informatique à l’Université de Lomé ?,recherche_info,,,,
+Quels diplômes sont nécessaires pour travailler comme coordinateur de projet ?,recherche_info,,,,
+Quels emplois combinent créativité et technologie ?,recherche_emploi,,,,
+"Je veux travailler dans l’énergie renouvelable, quels diplômes suivre ?",recherche_formation,,,,
+Quels documents dois-je fournir pour m’inscrire à l’IFOMESS ?,recherche_info,,,,
+Quels métiers permettent de travailler dans les jeux vidéo ou le développement de jeux ?,recherche_emploi,,,,
+Les formations en développement web sont-elles disponibles en ligne au Togo ?,recherche_info,,,,
+Quelles filières combinent sciences et management  ?,recherche_formation,,,,
+"Je cherche un travail à temps partiel pendant mes études, quelles options existent ?",recherche_emploi,,,,
+Peux-tu me donner les prérequis pour devenir assistant de direction ?,recherche_info,,,,
+"j’ai fait un BTS en gestion, quelles options d’emploi",recherche_emploi,,,,
+Quels emplois sont accessibles avec un bac D ?,recherche_emploi,,,,
+Quelle est la différence entre BTS et DUT en gestion ?,recherche_info,,,,
+Quels métiers manuels sont les mieux rémunérés au Togo ?,recherche_emploi,,,,
+Comment fonctionne un moteur à explosion ? ,hors_contexte,,,,
+Quels emplois sont adaptés à quelqu’un avec des compétences en bureautique et informatique ?,recherche_emploi,,,,
+Quelles formations en santé sont accessibles avec un bac D,recherche_formation,,,,
+c’est quoi le bac D,recherche_info,,,,
+"Je veux devenir assistant de direction, quels emplois puis-je postuler dès maintenant ?",recherche_emploi,,,,
+explique-moi le BTS,recherche_info,,,,
+Quelles formations existent pour devenir développeur mobile ?,recherche_formation,,,,
+quelles sont les conditions pour aller à l’université de Lomé,recherche_info,,,,
+Quelles entreprises au Togo recrutent des jeunes diplômés en gestion ?,recherche_emploi,,,,
+Existe-t-il des bourses pour étudier le droit au Togo ?,recherche_info,,,,
+où puis-je apprendre la couture,recherche_centre,,,,
+"j’ai un bac littéraire, que puis-je faire",recherche_formation,,,,
+"voici mon parcours, aide-moi à m’orienter",precision,,,,
+quelle est la différence entre une école privée et la fac,recherche_info,,,,
+je cherche une formation en droit,recherche_formation,,,,
+Qu’est-ce que la cybersécurité exactement ?,recherche_info,,,,
+je veux faire une licence en informatique,recherche_formation,,,,
+J'AIME BIEN LE FOOTBALL ,info_interet,,,,
+"je n'ai pas assez d'argent pour étudier, je veux faire des petits jobs",recherche_emploi,,,,
+je veux apprendre la couture,recherche_formation,,,,
+qu’est-ce qui est mieux entre médecine et pharmacie,recherche_info,,,,
+compare licence et BTS,recherche_info,,,,
+"j’aime le football, que puis-je étudier",recherche_formation,,,,
+je suis passionné par la couture,info_interet,,,,
+"j’adore la musique, quel métier me conviendrait",recherche_emploi,,,,
+aide-moi à trouver un emploi,recherche_emploi,,,,
+je cherche du travail sans diplôme,recherche_emploi,,,,
+Qu’est-ce que le Big Data et à quoi ça sert ?,recherche_info,,,,
+quelle formation après un bac scientifique,recherche_formation,,,,
+Qu’est-ce que le droit des affaires ?,recherche_info,,,,
+Qu’est-ce que le développement web full stack ?,recherche_info,,,,
+Peux-tu me dire la recette d’un gâteau au chocolat ?,hors_contexte,,,,
+Je viens d'obtenir mon bac scientifique,info_niveau,,,,
+je veux faire du big data,info_interet,,,,
+Où puis je faire cette licence?,recherche_centre,,,,
+Que propose concrètement l'UL?,recherche_info,,,,
+et l'epl?,recherche_info,,,,
+conseille moi,precision,,,,
+Comment intégrer l'epl ?,recherche_formation,,,,
+les conditions d'admission,recherche_formation,,,,
+Quelles autres universités propose la formation en big data,recherche_centre,,,,
+Quelles autres formations me propose tu?,recherche_formation,,,,
+Bonjour,salutation,,,,
+Hello,salutation,,,,
+Salut comment ça va ?,salutation,,,,
