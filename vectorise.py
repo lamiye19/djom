@@ -18,14 +18,19 @@ def load_and_split_txt(txt_dir="../collecte2/data"):
                 paths.append(path)
                 loader = TextLoader(path, encoding="utf-8")
                 docs = loader.load()
-                splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+                splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=100)
                 chunks = splitter.split_documents(docs)
+                # print(chunks)
                 all_docs.extend(chunks)
     print(len(paths), "fichiers")
+    print(all_docs[0])
     return all_docs
     
 def create_vectorstore(documents, index_path="knowledge_faiss"):
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
+    embeddings = HuggingFaceEmbeddings(
+        model_name="intfloat/multilingual-e5-base",
+        # model_name="sentence-transformers/all-MiniLM-L6-v2",
+        # model_name="sentence-transformers/multi-qa-mpnet-base-dot-v1",
     model_kwargs={"device": "cpu"})
     #embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
