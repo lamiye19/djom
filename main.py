@@ -1,5 +1,6 @@
 import streamlit as st
 from app.tab_chat import chatbot_tab
+# from tab_chat2 import classif
 # from app.tab_nlu import nlu_tab
 # from app.tab_chat_nlu import chatbot_nlu_tab
 

@@ -5,8 +5,44 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 import time
+import json
 import datetime
 from groq import Groq
+from prompts import PROMPT_CLASSIFICATION
+
+def classif():
+    client = Groq(api_key=os.environ["OPENAI_API_KEY"])
+    prompt = PROMPT_CLASSIFICATION
+
+    def stream_completion(messages):
+        try:
+            stream = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": messages}],
+                temperature=0.3,
+                max_tokens=800,
+                stream=False,
+            )
+
+            data = stream.choices[0].message.content
+            
+            try:
+                data = json.loads(data)
+                #data = json.dumps(data, indent=2, ensure_ascii=False)
+            except json.JSONDecodeError:
+                print("\nErreur : la sortie n'est pas un JSON valide.")
+
+            yield data
+        except Exception as e:
+            yield f"\n\n*(Erreur: {e})*"
+
+    message = "J’ai eu un bac scientifique avec 15.45 comme moyenne et je veux m’orienter vers les sciences et ingénieries."
+    message2 = "conseille moi"
+
+    response = stream_completion(prompt.replace("<<< MESSAGE UTILISATEUR >>>", message))
+    answer = st.write_stream(response["intention"])
+
+        
 
 def chatbot_tab():
     client = Groq(api_key=os.environ["OPENAI_API_KEY"])

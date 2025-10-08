@@ -4,9 +4,14 @@ from sklearn.model_selection import train_test_split
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
 import torch
 import joblib
+from entities import intent_data
 
 
-data = pd.read_csv("analyse/analyse.csv")
+#data = pd.read_csv("analyse/analyse.csv")
+data = pd.DataFrame([
+    {"question": t, "intention": ann["intent"], "entities": ann["entities"]}
+    for t, ann in intent_data
+])
 
 # Encoder les intentions en nombres
 le = LabelEncoder()
@@ -14,7 +19,7 @@ data['label'] = le.fit_transform(data['intention'])
 
 # Split train / test
 train_texts, test_texts, train_labels, test_labels = train_test_split(
-    data['entree'].tolist(),
+    data['question'].tolist(),
     data['label'].tolist(),
     test_size=0.2,
     random_state=42
@@ -49,6 +54,7 @@ model = AutoModelForSequenceClassification.from_pretrained(
     num_labels=num_labels
 )
 
+
 # Fonction de métriques
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
@@ -56,7 +62,6 @@ def compute_metrics(eval_pred):
     precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average="weighted")
     acc = accuracy_score(labels, preds)
     return {"accuracy": acc, "precision": precision, "recall": recall, "f1": f1}
-
 
 training_args = TrainingArguments(
     output_dir="./results",

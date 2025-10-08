@@ -2,4 +2,9 @@
 results
 knowledge_faiss-*
 app/__pycache__
+__pycache__
 bert-intentions
+resultat.ipynb
+.devcontainer
+.ipynb_checkpoints
+*/.ipynb_checkpoints

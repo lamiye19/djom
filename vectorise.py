@@ -22,8 +22,8 @@ def load_and_split_txt(txt_dir="../collecte2/data"):
                 chunks = splitter.split_documents(docs)
                 # print(chunks)
                 all_docs.extend(chunks)
-    print(len(paths), "fichiers")
     print(all_docs[0])
+    print(len(paths), "fichiers")
     return all_docs
     
 def create_vectorstore(documents, index_path="knowledge_faiss"):
@@ -31,15 +31,15 @@ def create_vectorstore(documents, index_path="knowledge_faiss"):
         model_name="intfloat/multilingual-e5-base",
         # model_name="sentence-transformers/all-MiniLM-L6-v2",
         # model_name="sentence-transformers/multi-qa-mpnet-base-dot-v1",
-    model_kwargs={"device": "cpu"})
+        model_kwargs={"device": "cpu"}
+    )
     #embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
-    index_file = os.path.join(index_path, "index.faiss")
+    #index_file = os.path.join(index_path, "index.faiss")
     vectorstore = FAISS.from_documents(documents, embeddings)
     vectorstore.save_local(index_path)
     print("Base vectorielle créée")
-    return vectorstore
     
 txt = load_and_split_txt()
 
-vectorstore = create_vectorstore(txt)
+create_vectorstore(txt)
