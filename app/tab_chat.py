@@ -242,8 +242,6 @@ def chatbot_tab():
 
 
     if user_input:
-        if len(st.session_state["messages"]) == 2:
-            supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
 
         st.session_state["awaiting_feedback"] = True
         st.session_state["messages"].append({"role": "user", "content": user_input})
@@ -304,7 +302,9 @@ def chatbot_tab():
                 st.slider("Notez cette réponse (1 = mauvaise, 5 = excellente)", 1, 5, key="note")
                 submitted = st.form_submit_button("Soumettre la note")
                 if submitted:
-                    
+                    if len(st.session_state["messages"]) == 2:
+                        supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
+                                
                     save_feedback(
                         question=st.session_state["question"],
                         reponse=st.session_state["answer"],
