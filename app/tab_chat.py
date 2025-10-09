@@ -197,6 +197,7 @@ def chatbot_tab():
     if "session_id" not in st.session_state:
         st.session_state["session_id"] = str(uuid.uuid4())
         #st.session_state["session_id"] = "1790e7d4-b2ea-45da-9ad6-746ce7e48bfa"
+        supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
 
     # Pour forcer la notation
     if "awaiting_feedback" not in st.session_state:
@@ -290,7 +291,8 @@ def chatbot_tab():
             st.session_state["answer"] = answer
             st.session_state["duree"] = duree
 
-            st.session_state["messages"].append({"role": "assistant", "content": answer})
+            st.session_state["messages"].append({"role": "assistant", "content": answer})                
+
         st.rerun()
         
 
@@ -301,10 +303,7 @@ def chatbot_tab():
         with st.form("feedback_form"):
                 st.slider("Notez cette réponse (1 = mauvaise, 5 = excellente)", 1, 5, key="note")
                 submitted = st.form_submit_button("Soumettre la note")
-                if submitted:
-                    if len(st.session_state["messages"]) == 2:
-                        supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
-                                
+                if submitted:                                
                     save_feedback(
                         question=st.session_state["question"],
                         reponse=st.session_state["answer"],
