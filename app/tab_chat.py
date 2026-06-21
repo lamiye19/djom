@@ -57,10 +57,10 @@ def detect_profil(message):
         content = response.choices[0].message.content
         profil = extract_json(content)
 
-        supabase.table("chats").update({
+        """ supabase.table("chats").update({
             "resume" : profil.get("resumé"),
             "entities": profil.get("entities")
-        }).eq("session_id",st.session_state["session_id"]).execute()
+        }).eq("session_id",st.session_state["session_id"]).execute() """
 
         return profil
     except Exception as e:
@@ -187,7 +187,8 @@ def reformulation():
 MODEL_MAP = {
     "llama": "llama-3.1-8b-instant",
     "llama versatile": "llama-3.3-70b-versatile",
-    "gemma": "gemma2-9b-it",
+    "gemma2": "gemma2-9b-it",
+    "gemma": "openai/gpt-oss-120b",
     "openai": "openai/gpt-oss-120b"
 }
 
@@ -197,7 +198,7 @@ def chatbot_tab():
     if "session_id" not in st.session_state:
         st.session_state["session_id"] = str(uuid.uuid4())
         #st.session_state["session_id"] = "1790e7d4-b2ea-45da-9ad6-746ce7e48bfa"
-        supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
+        # supabase.table("chats").insert({"session_id":st.session_state["session_id"]}).execute()
 
     # Pour forcer la notation
     if "awaiting_feedback" not in st.session_state:
@@ -304,7 +305,7 @@ def chatbot_tab():
                 st.slider("Notez cette réponse (1 = mauvaise, 5 = excellente)", 1, 5, key="note")
                 submitted = st.form_submit_button("Soumettre la note")
                 if submitted:                                
-                    save_feedback(
+                    """ save_feedback(
                         question=st.session_state["question"],
                         reponse=st.session_state["answer"],
                         note=st.session_state["note"],
@@ -313,7 +314,7 @@ def chatbot_tab():
                         session_id=st.session_state["session_id"],
                         intention=st.session_state["intent"].get("intention"),
                         entities=st.session_state["intent"].get("entities")
-                    )
+                    ) """
                     st.success("Merci pour votre feedback !")
                     st.session_state["awaiting_feedback"] = False
                     st.rerun()
